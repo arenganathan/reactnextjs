@@ -24,12 +24,14 @@ function Header({user}) {
   return (
     <Menu stackable fluid id="menu" inverted>
       <Container text fluid>
+      
         <Link href="/">
           <Menu.Item header active={isActive("/")}>
             <Image size="mini" src="/static/logo.svg" style={{marginRight: '1em'}} />
             HXF Gallery
           </Menu.Item>
         </Link>
+     
 
         { user ? (<>
         <Link href="/charts">
@@ -39,14 +41,14 @@ function Header({user}) {
           </Menu.Item>
         </Link>
 
-        { isRootorAdmin && (
+        { /* isRootorAdmin && (
           <Link href="/create">
           <Menu.Item header active={isActive("/create")}>
             <Icon name="add square" size="large" />
             Create
           </Menu.Item>
         </Link>
-        )}        
+        ) */}        
         
         <Link href="/account">
           <Menu.Item header active={isActive("/account")}>
@@ -76,13 +78,7 @@ function Header({user}) {
             SignUp
           </Menu.Item>
         </Link> 
-
-        <Link href="/signup">
-          <Menu.Item header active={isActive("/signup")}>
-            <Icon name="signup" size="large" />
-            SignUp
-          </Menu.Item>
-        </Link>
+        
         </>)}
 
       </Container>

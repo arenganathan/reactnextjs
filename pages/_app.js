@@ -21,7 +21,7 @@ class MyApp extends App {
     }
 
     if(!token) {
-      const isProtectedRoute = ctx.pathname === "/account" || ctx.pathname === "/create"
+      const isProtectedRoute = ctx.pathname === "/account" || ctx.pathname === "/create" || ctx.pathname === "/charts"
       if(isProtectedRoute) {
         redirectUser(ctx, "/login")
       }
@@ -62,11 +62,7 @@ class MyApp extends App {
   }
 
   render() {
-
-    console.log("URL", baseUrl)
-    console.log("DURL", process.env.NODE_URL)
-
-    
+   
     const { Component, pageProps } = this.props;
     return (
      

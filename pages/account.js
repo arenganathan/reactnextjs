@@ -11,9 +11,9 @@ function Account({user, orders}) {
  
   return <>
     <AccountHeader {...user} />
-    <AccountOrders  orders={orders} />
+    {/* <AccountOrders  orders={orders} /> */}
     {user.role === "root" && <AccountPermissions currentUserId={user._id} />}    
-    <ThemingLayout />
+    {/* <ThemingLayout /> */}
   </>;
 }
 

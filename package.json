@@ -4,8 +4,8 @@
   "description": "Project for MERN Stack - The Complete Guide",
   "main": "index.js",
   "scripts": {
-    "dev": "next --hostname=$NODE_URL",
-    "start": "NODE_URL=$NODE_URL && next --hostname=$NODE_URL",
+    "dev": "next",
+    "start": "next start",
     "build": "next build"
   },
   "keywords": [],

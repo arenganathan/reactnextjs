@@ -11,7 +11,7 @@ export default class Demo extends Component {
     return (
       <div className="bar-charts" >                      
 
-        <p>BarChart of positive and negative values</p>
+        <p>StateWise Average Population</p>
         <div className="bar-chart-wrapper" style={{ userSelect: 'none', WebkitUserSelect: 'none' }}>
           <BarChart width={1100} height={250} barGap={2} barSize={6} data={zipcodes} margin={{ top: 20, right: 60, bottom: 0, left: 20 }}>
             <XAxis dataKey="state" />
